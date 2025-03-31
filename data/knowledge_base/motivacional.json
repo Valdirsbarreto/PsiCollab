@@ -1,0 +1,57 @@
+[
+    {
+        "id": "motivacional_001",
+        "tipo": "motivacional",
+        "conteudo": "A avaliação da motivação intrínseca considera aspectos como interesse, satisfação e autonomia. A avaliação deve considerar diferentes tipos de atividades. A interpretação deve considerar a capacidade de autorregulação.",
+        "metadata": {
+            "fonte": "Manual de Motivação Intrínseca",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Deci, E.L. & Ryan, R.M."
+        }
+    },
+    {
+        "id": "motivacional_002",
+        "tipo": "motivacional",
+        "conteudo": "A avaliação da motivação extrínseca considera aspectos como recompensas, pressão externa e regulação. A avaliação deve considerar diferentes tipos de incentivos. A interpretação deve considerar a capacidade de adaptação.",
+        "metadata": {
+            "fonte": "Manual de Motivação Extrínseca",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Skinner, B.F."
+        }
+    },
+    {
+        "id": "motivacional_003",
+        "tipo": "motivacional",
+        "conteudo": "A avaliação da autoeficácia considera aspectos como crenças, expectativas e capacidades. A avaliação deve considerar diferentes domínios. A interpretação deve considerar a capacidade de realização.",
+        "metadata": {
+            "fonte": "Manual de Autoeficácia",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Bandura, A."
+        }
+    },
+    {
+        "id": "motivacional_004",
+        "tipo": "motivacional",
+        "conteudo": "A avaliação da orientação de metas considera aspectos como objetivos, estratégias e persistência. A avaliação deve considerar diferentes tipos de metas. A interpretação deve considerar a capacidade de planejamento.",
+        "metadata": {
+            "fonte": "Manual de Orientação de Metas",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Dweck, C.S."
+        }
+    },
+    {
+        "id": "motivacional_005",
+        "tipo": "motivacional",
+        "conteudo": "A avaliação do engajamento considera aspectos como envolvimento, persistência e esforço. A avaliação deve considerar diferentes contextos. A interpretação deve considerar a capacidade de comprometimento.",
+        "metadata": {
+            "fonte": "Manual de Engajamento",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Fredricks, J.A. & Eccles, J.S."
+        }
+    }
+] 

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "adulto_001",
+        "tipo": "adulto",
+        "conteudo": "O modelo de avaliação psicológica de Beck avalia depressão em adultos. A escala considera diferentes aspectos: humor, cognição, comportamento e sintomas físicos. A interpretação deve considerar a severidade dos sintomas e o contexto do paciente.",
+        "metadata": {
+            "fonte": "Manual de Depressão de Beck",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Beck, A.T."
+        }
+    },
+    {
+        "id": "adulto_002",
+        "tipo": "adulto",
+        "conteudo": "O modelo de avaliação psicológica de Hamilton avalia ansiedade em adultos. A escala considera diferentes aspectos: tensão, medo, insônia, sintomas somáticos e comportamento durante a entrevista. A interpretação deve considerar a frequência e intensidade dos sintomas.",
+        "metadata": {
+            "fonte": "Manual de Ansiedade de Hamilton",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Hamilton, M."
+        }
+    },
+    {
+        "id": "adulto_003",
+        "tipo": "adulto",
+        "conteudo": "O modelo de avaliação psicológica de MMPI-2 avalia personalidade em adultos. O inventário considera diferentes escalas: hipocondria, depressão, histeria, desvio psicopático, masculinidade-feminilidade, paranoia, psicastenia, esquizofrenia, hipomania e introversão social. A interpretação deve considerar o perfil completo e as escalas de validade.",
+        "metadata": {
+            "fonte": "Manual do MMPI-2",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Butcher, J.N."
+        }
+    },
+    {
+        "id": "adulto_004",
+        "tipo": "adulto",
+        "conteudo": "O modelo de avaliação psicológica de Rorschach avalia personalidade em adultos. O teste considera diferentes aspectos: processamento, mediação, ideação, controles e estresse, afeto, autopercepção e percepção interpessoal. A interpretação deve considerar o Sistema Compreensivo de Exner.",
+        "metadata": {
+            "fonte": "Manual do Rorschach",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Exner, J.E."
+        }
+    },
+    {
+        "id": "adulto_005",
+        "tipo": "adulto",
+        "conteudo": "O modelo de avaliação psicológica de NEO-PI-R avalia personalidade em adultos. O inventário considera os cinco grandes fatores: neuroticismo, extroversão, abertura à experiência, amabilidade e conscienciosidade. A interpretação deve considerar as facetas de cada fator e o contexto cultural.",
+        "metadata": {
+            "fonte": "Manual do NEO-PI-R",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Costa, P.T. & McCrae, R.R."
+        }
+    }
+] 

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "inteligencia_001",
+        "tipo": "inteligencia",
+        "conteudo": "O modelo de inteligência de Wechsler propõe uma avaliação multidimensional da inteligência. A escala considera diferentes domínios cognitivos: compreensão verbal, organização perceptual, memória de trabalho e velocidade de processamento. A interpretação deve considerar o perfil global e as discrepâncias entre índices.",
+        "metadata": {
+            "fonte": "Manual de Inteligência de Wechsler",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Wechsler, D."
+        }
+    },
+    {
+        "id": "inteligencia_002",
+        "tipo": "inteligencia",
+        "conteudo": "O modelo de inteligência de Binet-Simon foi pioneiro na avaliação da inteligência. A escala considera diferentes habilidades cognitivas e o desenvolvimento intelectual. A interpretação deve considerar a idade mental e o quociente intelectual.",
+        "metadata": {
+            "fonte": "Manual de Inteligência de Binet-Simon",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Binet, A. & Simon, T."
+        }
+    },
+    {
+        "id": "inteligencia_003",
+        "tipo": "inteligencia",
+        "conteudo": "O modelo de inteligência de Raven avalia a capacidade de raciocínio abstrato. A escala considera diferentes níveis de complexidade e padrões visuais. A interpretação deve considerar o nível de desenvolvimento do raciocínio.",
+        "metadata": {
+            "fonte": "Manual de Matrizes Progressivas",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Raven, J.C."
+        }
+    },
+    {
+        "id": "inteligencia_004",
+        "tipo": "inteligencia",
+        "conteudo": "O modelo de inteligência de Kaufman avalia diferentes aspectos cognitivos. A escala considera habilidades verbais e não verbais, processamento sequencial e simultâneo. A interpretação deve considerar o perfil cognitivo e as discrepâncias.",
+        "metadata": {
+            "fonte": "Manual de Inteligência de Kaufman",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Kaufman, A.S. & Kaufman, N.L."
+        }
+    },
+    {
+        "id": "inteligencia_005",
+        "tipo": "inteligencia",
+        "conteudo": "O modelo de inteligência de Stanford-Binet avalia diferentes aspectos cognitivos. A escala considera habilidades verbais e não verbais, raciocínio abstrato e concreto. A interpretação deve considerar o perfil cognitivo e o desenvolvimento intelectual.",
+        "metadata": {
+            "fonte": "Manual de Inteligência de Stanford-Binet",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Terman, L.M. & Merrill, M.A."
+        }
+    }
+] 

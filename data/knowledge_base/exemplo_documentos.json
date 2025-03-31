@@ -1,0 +1,92 @@
+[
+    {
+        "id": "doc_001",
+        "titulo": "Fundamentos do Teste de Wechsler",
+        "conteudo": "O Teste de Inteligência Wechsler é um instrumento psicométrico que avalia a capacidade intelectual geral através de subtestes verbais e de execução. Os subtestes verbais incluem compreensão, vocabulário e aritmética, enquanto os de execução incluem cubos, arranjo de figuras e completar figuras. A interpretação deve considerar não apenas o QI total, mas também os índices fatoriais e o perfil de subtestes.",
+        "categoria": "testes_inteligencia",
+        "subcategoria": "wechsler",
+        "tags": ["wechsler", "inteligência", "psicometria", "avaliação"],
+        "metadata": {
+            "autor": "Dr. João Silva",
+            "data_criacao": "2024-01-01T00:00:00",
+            "fonte": "Manual Técnico WAIS-IV",
+            "nivel_tecnico": "intermediário"
+        },
+        "referencias": [
+            "Manual Técnico WAIS-IV",
+            "Artigos de validação do instrumento"
+        ]
+    },
+    {
+        "id": "doc_002",
+        "titulo": "Interpretação do MMPI-2",
+        "conteudo": "O MMPI-2 é um instrumento de avaliação de personalidade que utiliza escalas clínicas e de validade. As escalas clínicas incluem hipocondria, depressão e histeria, enquanto as escalas de validade avaliam a consistência das respostas. A interpretação deve considerar o perfil de escalas, a configuração de picos e a relação entre as escalas de validade e clínicas.",
+        "categoria": "testes_personalidade",
+        "subcategoria": "mmpi",
+        "tags": ["mmpi", "personalidade", "avaliação", "psicodiagnóstico"],
+        "metadata": {
+            "autor": "Dra. Maria Santos",
+            "data_criacao": "2024-01-02T00:00:00",
+            "fonte": "Manual MMPI-2",
+            "nivel_tecnico": "avançado"
+        },
+        "referencias": [
+            "Manual MMPI-2",
+            "Estudos de validação brasileiros"
+        ]
+    },
+    {
+        "id": "doc_003",
+        "titulo": "Sistema Comprehensivo do Rorschach",
+        "conteudo": "O Sistema Comprehensivo do Rorschach é um método estruturado de interpretação que considera determinantes, localizações e conteúdo. Os determinantes incluem forma, cor, movimento e textura, enquanto as localizações referem-se às áreas da mancha utilizadas. A interpretação integra esses elementos para compreender o funcionamento psicológico do indivíduo.",
+        "categoria": "testes_projetivos",
+        "subcategoria": "rorschach",
+        "tags": ["rorschach", "projetivos", "psicodiagnóstico", "interpretação"],
+        "metadata": {
+            "autor": "Dr. Pedro Oliveira",
+            "data_criacao": "2024-01-03T00:00:00",
+            "fonte": "Manual do Sistema Comprehensivo",
+            "nivel_tecnico": "avançado"
+        },
+        "referencias": [
+            "Manual do Sistema Comprehensivo",
+            "Artigos sobre validação do método"
+        ]
+    },
+    {
+        "id": "doc_004",
+        "titulo": "Abordagem Cognitivo-Comportamental",
+        "conteudo": "A abordagem cognitivo-comportamental baseia-se na interação entre pensamentos, emoções e comportamentos. O terapeuta trabalha com o cliente para identificar padrões disfuncionais de pensamento e desenvolver estratégias de enfrentamento mais adaptativas. A intervenção inclui técnicas como reestruturação cognitiva, exposição gradual e treinamento de habilidades sociais.",
+        "categoria": "abordagens_teoricas",
+        "subcategoria": "tcc",
+        "tags": ["tcc", "terapia", "intervenção", "psicologia"],
+        "metadata": {
+            "autor": "Dra. Ana Costa",
+            "data_criacao": "2024-01-04T00:00:00",
+            "fonte": "Manual de TCC",
+            "nivel_tecnico": "intermediário"
+        },
+        "referencias": [
+            "Manual de TCC",
+            "Artigos sobre eficácia da abordagem"
+        ]
+    },
+    {
+        "id": "doc_005",
+        "titulo": "Interpretação Integrativa de Testes",
+        "conteudo": "A interpretação integrativa de testes psicológicos envolve a síntese de dados de múltiplos instrumentos para compreender o funcionamento psicológico do indivíduo. O processo inclui a análise de padrões convergentes e divergentes, a consideração do contexto de avaliação e a formulação de hipóteses clínicas. A integração deve resultar em uma compreensão holística do indivíduo e em recomendações específicas para intervenção.",
+        "categoria": "interpretacao",
+        "subcategoria": "integrativa",
+        "tags": ["interpretação", "integração", "avaliação", "psicodiagnóstico"],
+        "metadata": {
+            "autor": "Dr. Carlos Mendes",
+            "data_criacao": "2024-01-05T00:00:00",
+            "fonte": "Manual de Interpretação",
+            "nivel_tecnico": "avançado"
+        },
+        "referencias": [
+            "Manual de Interpretação",
+            "Artigos sobre integração de dados"
+        ]
+    }
+] 

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "patologias_001",
+        "tipo": "patologias",
+        "conteudo": "O Transtorno de Déficit de Atenção/Hiperatividade (TDAH) é caracterizado por padrões persistentes de desatenção e/ou hiperatividade-impulsividade. A avaliação psicológica deve considerar múltiplas fontes de informação, incluindo entrevistas, questionários e testes cognitivos. O WISC-IV pode mostrar discrepâncias entre índices, especialmente no IVP. O MMPI-2 pode apresentar elevações nas escalas de impulsividade e desatenção. A interpretação deve considerar o contexto do avaliado e possíveis comorbidades.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "patologias_002",
+        "tipo": "patologias",
+        "conteudo": "O Transtorno do Espectro Autista (TEA) é caracterizado por déficits persistentes na comunicação social e interação social, e padrões restritos e repetitivos de comportamento. A avaliação psicológica deve considerar múltiplas fontes de informação, incluindo entrevistas, questionários e testes cognitivos. O WISC-IV pode mostrar perfil cognitivo irregular, com discrepâncias entre índices. O Rorschach pode apresentar indicadores de dificuldades na percepção social. A interpretação deve considerar o contexto do avaliado e o nível de funcionamento.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "patologias_003",
+        "tipo": "patologias",
+        "conteudo": "O Transtorno de Ansiedade Generalizada (TAG) é caracterizado por ansiedade e preocupação excessivas. A avaliação psicológica deve considerar múltiplas fontes de informação, incluindo entrevistas, questionários e testes de personalidade. O MMPI-2 pode apresentar elevações nas escalas de ansiedade e preocupação. O NEO PI-R pode mostrar elevação no fator neuroticismo. A interpretação deve considerar o contexto do avaliado e possíveis comorbidades.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "patologias_004",
+        "tipo": "patologias",
+        "conteudo": "O Transtorno Depressivo Maior (TDM) é caracterizado por humor deprimido e perda de interesse ou prazer. A avaliação psicológica deve considerar múltiplas fontes de informação, incluindo entrevistas, questionários e testes de personalidade. O MMPI-2 pode apresentar elevações nas escalas de depressão e desesperança. O NEO PI-R pode mostrar elevação no fator neuroticismo. A interpretação deve considerar o contexto do avaliado e possíveis comorbidades.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "patologias_005",
+        "tipo": "patologias",
+        "conteudo": "O Transtorno Bipolar (TB) é caracterizado por episódios de mania ou hipomania e depressão. A avaliação psicológica deve considerar múltiplas fontes de informação, incluindo entrevistas, questionários e testes de personalidade. O MMPI-2 pode apresentar elevações nas escalas de mania e depressão. O NEO PI-R pode mostrar elevação no fator neuroticismo. A interpretação deve considerar o contexto do avaliado, o estado atual e possíveis comorbidades.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    }
+] 

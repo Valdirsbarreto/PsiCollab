@@ -1,0 +1,57 @@
+[
+    {
+        "id": "normativas_001",
+        "tipo": "normativas",
+        "conteudo": "O Código de Ética Profissional do Psicólogo estabelece diretrizes para a prática profissional. A avaliação psicológica deve seguir princípios éticos como beneficência, não maleficência, autonomia e justiça. A interpretação dos resultados deve considerar o contexto do avaliado e possíveis implicações. É importante identificar possíveis violações éticas e garantir o sigilo profissional.",
+        "metadata": {
+            "fonte": "Código de Ética Profissional do Psicólogo",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "normativas_002",
+        "tipo": "normativas",
+        "conteudo": "As Diretrizes para Avaliação Psicológica estabelecem padrões para a prática profissional. A avaliação deve seguir procedimentos metodológicos adequados. A interpretação dos resultados deve considerar evidências científicas. É importante identificar possíveis limitações metodológicas e garantir a validade dos instrumentos.",
+        "metadata": {
+            "fonte": "Diretrizes para Avaliação Psicológica",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "normativas_003",
+        "tipo": "normativas",
+        "conteudo": "A Resolução sobre Avaliação Psicológica estabelece critérios para a prática profissional. A avaliação deve considerar aspectos éticos e técnicos. A interpretação dos resultados deve seguir padrões científicos. É importante identificar possíveis violações e garantir a qualidade da avaliação.",
+        "metadata": {
+            "fonte": "Resolução sobre Avaliação Psicológica",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "normativas_004",
+        "tipo": "normativas",
+        "conteudo": "O Manual de Avaliação Psicológica estabelece procedimentos para a prática profissional. A avaliação deve seguir protocolos padronizados. A interpretação dos resultados deve considerar evidências científicas. É importante identificar possíveis limitações e garantir a confiabilidade dos instrumentos.",
+        "metadata": {
+            "fonte": "Manual de Avaliação Psicológica",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "normativas_005",
+        "tipo": "normativas",
+        "conteudo": "As Normas para Avaliação Psicológica estabelecem critérios para a prática profissional. A avaliação deve considerar aspectos éticos e técnicos. A interpretação dos resultados deve seguir padrões científicos. É importante identificar possíveis violações e garantir a qualidade da avaliação.",
+        "metadata": {
+            "fonte": "Normas para Avaliação Psicológica",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    }
+] 

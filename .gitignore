@@ -172,3 +172,24 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Projeto PsiCollab
+data/embeddings/
+logs/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Qdrant
+qdrant_data/
+
+# Outros
+.DS_Store
+Thumbs.db

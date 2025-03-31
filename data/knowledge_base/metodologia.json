@@ -1,0 +1,57 @@
+[
+    {
+        "id": "metodologia_001",
+        "tipo": "metodologia",
+        "conteudo": "A metodologia científica em avaliação psicológica deve seguir princípios rigorosos. A avaliação deve considerar aspectos metodológicos adequados. A interpretação deve ser fundamentada em evidências. É importante identificar possíveis limitações metodológicas e garantir a validade dos instrumentos.",
+        "metadata": {
+            "fonte": "Manual de Metodologia em Avaliação Psicológica",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "metodologia_002",
+        "tipo": "metodologia",
+        "conteudo": "A metodologia quantitativa em avaliação psicológica deve considerar aspectos estatísticos. A avaliação deve seguir procedimentos padronizados. A interpretação deve considerar dados numéricos. É importante identificar possíveis viéses e garantir a confiabilidade dos resultados.",
+        "metadata": {
+            "fonte": "Manual de Metodologia em Avaliação Psicológica",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "metodologia_003",
+        "tipo": "metodologia",
+        "conteudo": "A metodologia qualitativa em avaliação psicológica deve considerar aspectos subjetivos. A avaliação deve seguir procedimentos flexíveis. A interpretação deve considerar dados descritivos. É importante identificar possíveis subjetividades e garantir a validade dos resultados.",
+        "metadata": {
+            "fonte": "Manual de Metodologia em Avaliação Psicológica",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "metodologia_004",
+        "tipo": "metodologia",
+        "conteudo": "A metodologia mista em avaliação psicológica deve considerar aspectos quantitativos e qualitativos. A avaliação deve seguir procedimentos integrados. A interpretação deve considerar dados múltiplos. É importante identificar possíveis integrações e garantir a validade dos resultados.",
+        "metadata": {
+            "fonte": "Manual de Metodologia em Avaliação Psicológica",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    },
+    {
+        "id": "metodologia_005",
+        "tipo": "metodologia",
+        "conteudo": "A metodologia experimental em avaliação psicológica deve considerar aspectos controlados. A avaliação deve seguir procedimentos sistemáticos. A interpretação deve considerar dados experimentais. É importante identificar possíveis controles e garantir a validade dos resultados.",
+        "metadata": {
+            "fonte": "Manual de Metodologia em Avaliação Psicológica",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Conselho Federal de Psicologia"
+        }
+    }
+] 

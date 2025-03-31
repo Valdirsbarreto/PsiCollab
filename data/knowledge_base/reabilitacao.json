@@ -1,0 +1,57 @@
+[
+    {
+        "id": "reabilitacao_001",
+        "tipo": "reabilitacao",
+        "conteudo": "O modelo de avaliação de reabilitação de WHO avalia a funcionalidade. A escala considera diferentes aspectos: funções e estruturas do corpo, atividades e participação. A interpretação deve considerar a classificação internacional de funcionalidade.",
+        "metadata": {
+            "fonte": "Manual de Funcionalidade",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "OMS"
+        }
+    },
+    {
+        "id": "reabilitacao_002",
+        "tipo": "reabilitacao",
+        "conteudo": "O modelo de avaliação de reabilitação de Bobath avalia o desenvolvimento motor. A escala considera diferentes aspectos: tônus muscular, postura e movimento. A interpretação deve considerar o conceito Bobath.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Motor",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Bobath, B. & Bobath, K."
+        }
+    },
+    {
+        "id": "reabilitacao_003",
+        "tipo": "reabilitacao",
+        "conteudo": "O modelo de avaliação de reabilitação de Kabat avalia o movimento. A escala considera diferentes aspectos: resistência, irradiação e contraste. A interpretação deve considerar a facilitação neuromuscular proprioceptiva.",
+        "metadata": {
+            "fonte": "Manual de Movimento",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Kabat, H."
+        }
+    },
+    {
+        "id": "reabilitacao_004",
+        "tipo": "reabilitacao",
+        "conteudo": "O modelo de avaliação de reabilitação de Brunnstrom avalia a recuperação motora. A escala considera diferentes estágios: flacidez, espasticidade, movimentos sinérgicos e controle voluntário. A interpretação deve considerar os estágios de recuperação.",
+        "metadata": {
+            "fonte": "Manual de Recuperação Motora",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Brunnstrom, S."
+        }
+    },
+    {
+        "id": "reabilitacao_005",
+        "tipo": "reabilitacao",
+        "conteudo": "O modelo de avaliação de reabilitação de Rood avalia a integração sensorial. A escala considera diferentes aspectos: tato, propriocepção, vestibular e visual. A interpretação deve considerar a teoria da integração sensorial.",
+        "metadata": {
+            "fonte": "Manual de Integração Sensorial",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Rood, M.S."
+        }
+    }
+] 

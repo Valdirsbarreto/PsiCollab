@@ -1,0 +1,3 @@
+"""
+Pacote de scripts utilitários.
+""" 

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "intervencao_001",
+        "tipo": "intervencao",
+        "conteudo": "A Terapia Cognitivo-Comportamental (TCC) é uma abordagem terapêutica estruturada e orientada a objetivos. O terapeuta trabalha em colaboração com o paciente para identificar e modificar pensamentos e comportamentos disfuncionais. A TCC utiliza técnicas como reestruturação cognitiva, exposição gradual e treinamento de habilidades sociais. O tratamento deve ser adaptado às necessidades específicas do paciente e considerar seu contexto sociocultural.",
+        "metadata": {
+            "fonte": "Manual de TCC",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Beck, A.T."
+        }
+    },
+    {
+        "id": "intervencao_002",
+        "tipo": "intervencao",
+        "conteudo": "A Terapia Psicanalítica é uma abordagem terapêutica que explora aspectos inconscientes do funcionamento psíquico. O terapeuta utiliza técnicas como associação livre, interpretação e análise da transferência. O tratamento visa promover insight e resolução de conflitos inconscientes. A terapia deve ser adaptada às necessidades específicas do paciente e considerar seu contexto sociocultural.",
+        "metadata": {
+            "fonte": "Manual de Psicoterapia Psicanalítica",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Freud, S."
+        }
+    },
+    {
+        "id": "intervencao_003",
+        "tipo": "intervencao",
+        "conteudo": "A Terapia Humanista é uma abordagem terapêutica que enfatiza o potencial de crescimento e autorrealização. O terapeuta utiliza técnicas como empatia, aceitação incondicional e congruência. O tratamento visa promover autoconhecimento e desenvolvimento pessoal. A terapia deve ser adaptada às necessidades específicas do paciente e considerar seu contexto sociocultural.",
+        "metadata": {
+            "fonte": "Manual de Terapia Humanista",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Rogers, C."
+        }
+    },
+    {
+        "id": "intervencao_004",
+        "tipo": "intervencao",
+        "conteudo": "A Terapia Sistêmica é uma abordagem terapêutica que considera o contexto familiar e social. O terapeuta utiliza técnicas como reestruturação familiar, comunicação circular e prescrição de tarefas. O tratamento visa modificar padrões disfuncionais de interação. A terapia deve ser adaptada às necessidades específicas da família e considerar seu contexto sociocultural.",
+        "metadata": {
+            "fonte": "Manual de Terapia Sistêmica",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Bateson, G."
+        }
+    },
+    {
+        "id": "intervencao_005",
+        "tipo": "intervencao",
+        "conteudo": "A Terapia Comportamental é uma abordagem terapêutica que enfatiza o aprendizado e modificação de comportamentos. O terapeuta utiliza técnicas como reforçamento positivo, extinção e modelagem. O tratamento visa promover mudanças comportamentais adaptativas. A terapia deve ser adaptada às necessidades específicas do paciente e considerar seu contexto sociocultural.",
+        "metadata": {
+            "fonte": "Manual de Terapia Comportamental",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Skinner, B.F."
+        }
+    }
+] 

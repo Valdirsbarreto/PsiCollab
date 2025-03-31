@@ -1,0 +1,57 @@
+[
+    {
+        "id": "adolescente_001",
+        "tipo": "adolescente",
+        "conteudo": "O modelo de avaliação do adolescente de Erikson avalia a identidade. A escala considera diferentes aspectos: confusão de papéis, moratória e identidade alcançada. A interpretação deve considerar a teoria do desenvolvimento psicossocial.",
+        "metadata": {
+            "fonte": "Manual de Identidade",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Erikson, E.H."
+        }
+    },
+    {
+        "id": "adolescente_002",
+        "tipo": "adolescente",
+        "conteudo": "O modelo de avaliação do adolescente de Marcia avalia o status de identidade. A escala considera diferentes aspectos: difusão, foreclosure, moratória e conquista. A interpretação deve considerar a teoria do status de identidade.",
+        "metadata": {
+            "fonte": "Manual de Status de Identidade",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Marcia, J.E."
+        }
+    },
+    {
+        "id": "adolescente_003",
+        "tipo": "adolescente",
+        "conteudo": "O modelo de avaliação do adolescente de Piaget avalia o pensamento formal. A escala considera diferentes aspectos: raciocínio hipotético-dedutivo, pensamento abstrato e metacognição. A interpretação deve considerar o desenvolvimento cognitivo.",
+        "metadata": {
+            "fonte": "Manual de Pensamento Formal",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Piaget, J."
+        }
+    },
+    {
+        "id": "adolescente_004",
+        "tipo": "adolescente",
+        "conteudo": "O modelo de avaliação do adolescente de Kohlberg avalia o desenvolvimento moral. A escala considera diferentes níveis: pré-convencional, convencional e pós-convencional. A interpretação deve considerar a teoria do desenvolvimento moral.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Moral",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Kohlberg, L."
+        }
+    },
+    {
+        "id": "adolescente_005",
+        "tipo": "adolescente",
+        "conteudo": "O modelo de avaliação do adolescente de Elkind avalia o egocentrismo. A escala considera diferentes aspectos: fábula pessoal, audiência imaginária e invulnerabilidade. A interpretação deve considerar a teoria do egocentrismo adolescente.",
+        "metadata": {
+            "fonte": "Manual de Egocentrismo",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Elkind, D."
+        }
+    }
+] 

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "vocacional_001",
+        "tipo": "vocacional",
+        "conteudo": "A avaliação dos interesses profissionais considera aspectos como preferências, motivações e valores. A avaliação deve considerar diferentes áreas profissionais. A interpretação deve considerar a orientação vocacional.",
+        "metadata": {
+            "fonte": "Manual de Interesses Profissionais",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Holland, J.L."
+        }
+    },
+    {
+        "id": "vocacional_002",
+        "tipo": "vocacional",
+        "conteudo": "A avaliação das aptidões profissionais considera aspectos como habilidades, competências e talentos. A avaliação deve considerar diferentes domínios. A interpretação deve considerar a capacidade profissional.",
+        "metadata": {
+            "fonte": "Manual de Aptidões Profissionais",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Super, D.E."
+        }
+    },
+    {
+        "id": "vocacional_003",
+        "tipo": "vocacional",
+        "conteudo": "A avaliação da personalidade profissional considera aspectos como traços, estilos e adaptação. A avaliação deve considerar diferentes contextos. A interpretação deve considerar o perfil profissional.",
+        "metadata": {
+            "fonte": "Manual de Personalidade Profissional",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Hogan, R."
+        }
+    },
+    {
+        "id": "vocacional_004",
+        "tipo": "vocacional",
+        "conteudo": "A avaliação da maturidade vocacional considera aspectos como desenvolvimento, decisão e planejamento. A avaliação deve considerar diferentes estágios. A interpretação deve considerar o desenvolvimento vocacional.",
+        "metadata": {
+            "fonte": "Manual de Maturidade Vocacional",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Crites, J.O."
+        }
+    },
+    {
+        "id": "vocacional_005",
+        "tipo": "vocacional",
+        "conteudo": "A avaliação da satisfação profissional considera aspectos como realização, bem-estar e comprometimento. A avaliação deve considerar diferentes dimensões. A interpretação deve considerar a qualidade de vida profissional.",
+        "metadata": {
+            "fonte": "Manual de Satisfação Profissional",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Hackman, J.R. & Oldham, G.R."
+        }
+    }
+] 

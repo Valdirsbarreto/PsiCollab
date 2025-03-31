@@ -1,0 +1,57 @@
+[
+    {
+        "id": "linguagem_001",
+        "tipo": "linguagem",
+        "conteudo": "A avaliação da compreensão verbal considera aspectos como compreensão de instruções, perguntas e textos. A avaliação deve considerar diferentes níveis de complexidade e contextos. A interpretação deve considerar a capacidade de processamento linguístico.",
+        "metadata": {
+            "fonte": "Manual de Compreensão Verbal",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Caramazza, A. & Hillis, A.E."
+        }
+    },
+    {
+        "id": "linguagem_002",
+        "tipo": "linguagem",
+        "conteudo": "A avaliação da expressão verbal considera aspectos como fluência, nomeação e produção de frases. A avaliação deve considerar diferentes modalidades de expressão. A interpretação deve considerar a capacidade de produção linguística.",
+        "metadata": {
+            "fonte": "Manual de Expressão Verbal",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Levelt, W.J.M."
+        }
+    },
+    {
+        "id": "linguagem_003",
+        "tipo": "linguagem",
+        "conteudo": "A avaliação da fluência verbal considera aspectos como geração de palavras e categorias. A avaliação deve considerar diferentes tipos de fluência. A interpretação deve considerar a capacidade de acesso lexical.",
+        "metadata": {
+            "fonte": "Manual de Fluência Verbal",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Lezak, M.D."
+        }
+    },
+    {
+        "id": "linguagem_004",
+        "tipo": "linguagem",
+        "conteudo": "A avaliação da repetição considera aspectos como repetição de palavras, frases e pseudopalavras. A avaliação deve considerar diferentes níveis de complexidade. A interpretação deve considerar a capacidade de processamento fonológico.",
+        "metadata": {
+            "fonte": "Manual de Repetição",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Warrington, E.K. & Shallice, T."
+        }
+    },
+    {
+        "id": "linguagem_005",
+        "tipo": "linguagem",
+        "conteudo": "A avaliação da nomeação considera aspectos como acesso ao léxico e recuperação de palavras. A avaliação deve considerar diferentes categorias semânticas. A interpretação deve considerar a capacidade de acesso lexical.",
+        "metadata": {
+            "fonte": "Manual de Nomeação",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Goodglass, H. & Kaplan, E."
+        }
+    }
+] 

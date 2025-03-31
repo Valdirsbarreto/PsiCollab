@@ -1,0 +1,57 @@
+[
+    {
+        "id": "memoria_001",
+        "tipo": "memoria",
+        "conteudo": "A memória episódica refere-se à capacidade de recordar eventos e experiências pessoais. A avaliação considera aspectos como codificação, armazenamento e recuperação de informações. A interpretação deve considerar o contexto temporal e espacial das memórias.",
+        "metadata": {
+            "fonte": "Manual de Memória Episódica",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Tulving, E."
+        }
+    },
+    {
+        "id": "memoria_002",
+        "tipo": "memoria",
+        "conteudo": "A memória semântica refere-se ao conhecimento geral e conceitos. A avaliação considera aspectos como vocabulário, conhecimento factual e categorização. A interpretação deve considerar a organização do conhecimento.",
+        "metadata": {
+            "fonte": "Manual de Memória Semântica",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Collins, A.M. & Quillian, M.R."
+        }
+    },
+    {
+        "id": "memoria_003",
+        "tipo": "memoria",
+        "conteudo": "A memória de trabalho refere-se à capacidade de manter e manipular informações temporariamente. A avaliação considera aspectos como span de dígitos, span de letras e tarefas de atualização. A interpretação deve considerar a capacidade de processamento.",
+        "metadata": {
+            "fonte": "Manual de Memória de Trabalho",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Baddeley, A.D. & Hitch, G."
+        }
+    },
+    {
+        "id": "memoria_004",
+        "tipo": "memoria",
+        "conteudo": "A memória procedimental refere-se à capacidade de aprender e executar habilidades motoras e cognitivas. A avaliação considera aspectos como aprendizagem de sequências e automatização. A interpretação deve considerar a aquisição e retenção de habilidades.",
+        "metadata": {
+            "fonte": "Manual de Memória Procedimental",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Squire, L.R. & Zola, S.M."
+        }
+    },
+    {
+        "id": "memoria_005",
+        "tipo": "memoria",
+        "conteudo": "A memória prospectiva refere-se à capacidade de lembrar e executar ações futuras. A avaliação considera aspectos como planejamento e monitoramento temporal. A interpretação deve considerar a capacidade de organização temporal.",
+        "metadata": {
+            "fonte": "Manual de Memória Prospectiva",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Einstein, G.O. & McDaniel, M.A."
+        }
+    }
+] 

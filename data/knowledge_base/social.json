@@ -1,0 +1,57 @@
+[
+    {
+        "id": "social_001",
+        "tipo": "social",
+        "conteudo": "O modelo de avaliação social de Bronfenbrenner avalia o desenvolvimento em contexto. A escala considera diferentes níveis: microsistema, mesossistema, exossistema e macrossistema. A interpretação deve considerar a teoria dos sistemas ecológicos.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento em Contexto",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Bronfenbrenner, U."
+        }
+    },
+    {
+        "id": "social_002",
+        "tipo": "social",
+        "conteudo": "O modelo de avaliação social de Bowlby avalia o apego. A escala considera diferentes estilos: seguro, ansioso, evitativo e desorganizado. A interpretação deve considerar a teoria do apego.",
+        "metadata": {
+            "fonte": "Manual de Apego",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Bowlby, J."
+        }
+    },
+    {
+        "id": "social_003",
+        "tipo": "social",
+        "conteudo": "O modelo de avaliação social de Bandura avalia a aprendizagem social. A escala considera diferentes aspectos: observação, imitação e modelagem. A interpretação deve considerar a teoria da aprendizagem social.",
+        "metadata": {
+            "fonte": "Manual de Aprendizagem Social",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Bandura, A."
+        }
+    },
+    {
+        "id": "social_004",
+        "tipo": "social",
+        "conteudo": "O modelo de avaliação social de Vygotsky avalia o desenvolvimento sócio-cultural. A escala considera diferentes aspectos: zona de desenvolvimento proximal e mediação social. A interpretação deve considerar a teoria sócio-cultural.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Sócio-Cultural",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Vygotsky, L.S."
+        }
+    },
+    {
+        "id": "social_005",
+        "tipo": "social",
+        "conteudo": "O modelo de avaliação social de Erikson avalia o desenvolvimento psicossocial. A escala considera diferentes crises: confiança vs desconfiança, autonomia vs vergonha, iniciativa vs culpa, indústria vs inferioridade, identidade vs confusão de papéis, intimidade vs isolamento, generatividade vs estagnação e integridade vs desespero. A interpretação deve considerar a teoria do desenvolvimento psicossocial.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Psicossocial",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Erikson, E.H."
+        }
+    }
+] 

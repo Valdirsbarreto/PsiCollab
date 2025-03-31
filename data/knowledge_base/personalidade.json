@@ -1,0 +1,57 @@
+[
+    {
+        "id": "personalidade_001",
+        "tipo": "personalidade",
+        "conteudo": "A avaliação dos traços de personalidade considera aspectos como características, tendências e padrões. A avaliação deve considerar diferentes dimensões. A interpretação deve considerar o perfil de personalidade.",
+        "metadata": {
+            "fonte": "Manual de Traços de Personalidade",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Costa, P.T. & McCrae, R.R."
+        }
+    },
+    {
+        "id": "personalidade_002",
+        "tipo": "personalidade",
+        "conteudo": "A avaliação dos estilos de personalidade considera aspectos como padrões, preferências e adaptações. A avaliação deve considerar diferentes contextos. A interpretação deve considerar o estilo de funcionamento.",
+        "metadata": {
+            "fonte": "Manual de Estilos de Personalidade",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Millon, T."
+        }
+    },
+    {
+        "id": "personalidade_003",
+        "tipo": "personalidade",
+        "conteudo": "A avaliação dos mecanismos de defesa considera aspectos como adaptação, proteção e regulação. A avaliação deve considerar diferentes mecanismos. A interpretação deve considerar o funcionamento defensivo.",
+        "metadata": {
+            "fonte": "Manual de Mecanismos de Defesa",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Freud, A."
+        }
+    },
+    {
+        "id": "personalidade_004",
+        "tipo": "personalidade",
+        "conteudo": "A avaliação dos valores pessoais considera aspectos como crenças, princípios e objetivos. A avaliação deve considerar diferentes domínios. A interpretação deve considerar a orientação de valores.",
+        "metadata": {
+            "fonte": "Manual de Valores Pessoais",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Rokeach, M."
+        }
+    },
+    {
+        "id": "personalidade_005",
+        "tipo": "personalidade",
+        "conteudo": "A avaliação da autoestima considera aspectos como autoconceito, autovalorização e autoconfiança. A avaliação deve considerar diferentes dimensões. A interpretação deve considerar o funcionamento do self.",
+        "metadata": {
+            "fonte": "Manual de Autoestima",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Rosenberg, M."
+        }
+    }
+] 

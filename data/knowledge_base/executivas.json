@@ -1,0 +1,57 @@
+[
+    {
+        "id": "executivas_001",
+        "tipo": "executivas",
+        "conteudo": "A avaliação do planejamento considera aspectos como organização de ações e resolução de problemas. A avaliação deve considerar diferentes níveis de complexidade. A interpretação deve considerar a capacidade de organização estratégica.",
+        "metadata": {
+            "fonte": "Manual de Planejamento",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Shallice, T. & Burgess, P.W."
+        }
+    },
+    {
+        "id": "executivas_002",
+        "tipo": "executivas",
+        "conteudo": "A avaliação da flexibilidade cognitiva considera aspectos como alternância de tarefas e adaptação a mudanças. A avaliação deve considerar diferentes tipos de alternância. A interpretação deve considerar a capacidade de adaptação.",
+        "metadata": {
+            "fonte": "Manual de Flexibilidade Cognitiva",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Miyake, A. & Friedman, N.P."
+        }
+    },
+    {
+        "id": "executivas_003",
+        "tipo": "executivas",
+        "conteudo": "A avaliação do controle inibitório considera aspectos como supressão de respostas e interferência. A avaliação deve considerar diferentes tipos de inibição. A interpretação deve considerar a capacidade de controle.",
+        "metadata": {
+            "fonte": "Manual de Controle Inibitório",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Barkley, R.A."
+        }
+    },
+    {
+        "id": "executivas_004",
+        "tipo": "executivas",
+        "conteudo": "A avaliação da memória de trabalho considera aspectos como manipulação e atualização de informações. A avaliação deve considerar diferentes tipos de informações. A interpretação deve considerar a capacidade de processamento.",
+        "metadata": {
+            "fonte": "Manual de Memória de Trabalho",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Baddeley, A.D."
+        }
+    },
+    {
+        "id": "executivas_005",
+        "tipo": "executivas",
+        "conteudo": "A avaliação da monitorização considera aspectos como autoavaliação e correção de erros. A avaliação deve considerar diferentes tipos de monitoramento. A interpretação deve considerar a capacidade de autorregulação.",
+        "metadata": {
+            "fonte": "Manual de Monitorização",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Stuss, D.T. & Alexander, M.P."
+        }
+    }
+] 

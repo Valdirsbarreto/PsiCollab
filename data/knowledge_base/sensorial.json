@@ -1,0 +1,57 @@
+[
+    {
+        "id": "sensorial_001",
+        "tipo": "sensorial",
+        "conteudo": "A avaliação da sensibilidade tátil considera aspectos como discriminação, localização e intensidade. A avaliação deve considerar diferentes tipos de estímulos. A interpretação deve considerar a capacidade de processamento tátil.",
+        "metadata": {
+            "fonte": "Manual de Sensibilidade Tátil",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Weinstein, S."
+        }
+    },
+    {
+        "id": "sensorial_002",
+        "tipo": "sensorial",
+        "conteudo": "A avaliação da sensibilidade auditiva considera aspectos como discriminação, localização e intensidade. A avaliação deve considerar diferentes tipos de sons. A interpretação deve considerar a capacidade de processamento auditivo.",
+        "metadata": {
+            "fonte": "Manual de Sensibilidade Auditiva",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Moore, B.C.J."
+        }
+    },
+    {
+        "id": "sensorial_003",
+        "tipo": "sensorial",
+        "conteudo": "A avaliação da sensibilidade visual considera aspectos como discriminação, contraste e intensidade. A avaliação deve considerar diferentes tipos de estímulos. A interpretação deve considerar a capacidade de processamento visual.",
+        "metadata": {
+            "fonte": "Manual de Sensibilidade Visual",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Wandell, B.A."
+        }
+    },
+    {
+        "id": "sensorial_004",
+        "tipo": "sensorial",
+        "conteudo": "A avaliação da sensibilidade gustativa considera aspectos como discriminação, intensidade e qualidade. A avaliação deve considerar diferentes tipos de sabores. A interpretação deve considerar a capacidade de processamento gustativo.",
+        "metadata": {
+            "fonte": "Manual de Sensibilidade Gustativa",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Bartoshuk, L.M."
+        }
+    },
+    {
+        "id": "sensorial_005",
+        "tipo": "sensorial",
+        "conteudo": "A avaliação da sensibilidade olfativa considera aspectos como discriminação, intensidade e qualidade. A avaliação deve considerar diferentes tipos de odores. A interpretação deve considerar a capacidade de processamento olfativo.",
+        "metadata": {
+            "fonte": "Manual de Sensibilidade Olfativa",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Doty, R.L."
+        }
+    }
+] 

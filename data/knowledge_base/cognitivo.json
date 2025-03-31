@@ -1,0 +1,57 @@
+[
+    {
+        "id": "cognitivo_001",
+        "tipo": "cognitivo",
+        "conteudo": "A avaliação do processamento de informação considera aspectos como velocidade, precisão e eficiência. A avaliação deve considerar diferentes tipos de informações. A interpretação deve considerar a capacidade de processamento.",
+        "metadata": {
+            "fonte": "Manual de Processamento de Informação",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Sternberg, R.J."
+        }
+    },
+    {
+        "id": "cognitivo_002",
+        "tipo": "cognitivo",
+        "conteudo": "A avaliação do raciocínio considera aspectos como lógica, resolução de problemas e pensamento crítico. A avaliação deve considerar diferentes tipos de raciocínio. A interpretação deve considerar a capacidade de raciocínio.",
+        "metadata": {
+            "fonte": "Manual de Raciocínio",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Piaget, J."
+        }
+    },
+    {
+        "id": "cognitivo_003",
+        "tipo": "cognitivo",
+        "conteudo": "A avaliação da atenção considera aspectos como foco, sustentação e alternância. A avaliação deve considerar diferentes tipos de atenção. A interpretação deve considerar a capacidade atencional.",
+        "metadata": {
+            "fonte": "Manual de Atenção",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Posner, M.I."
+        }
+    },
+    {
+        "id": "cognitivo_004",
+        "tipo": "cognitivo",
+        "conteudo": "A avaliação da memória considera aspectos como codificação, armazenamento e recuperação. A avaliação deve considerar diferentes tipos de memória. A interpretação deve considerar a capacidade mnésica.",
+        "metadata": {
+            "fonte": "Manual de Memória",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Baddeley, A.D."
+        }
+    },
+    {
+        "id": "cognitivo_005",
+        "tipo": "cognitivo",
+        "conteudo": "A avaliação da linguagem considera aspectos como compreensão, expressão e processamento. A avaliação deve considerar diferentes aspectos da linguagem. A interpretação deve considerar a capacidade linguística.",
+        "metadata": {
+            "fonte": "Manual de Linguagem",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Chomsky, N."
+        }
+    }
+] 

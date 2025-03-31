@@ -1,0 +1,57 @@
+[
+    {
+        "id": "estatistica_001",
+        "tipo": "estatistica",
+        "conteudo": "A estatística descritiva é fundamental para a análise de dados em psicologia. O pesquisador deve utilizar medidas de tendência central (média, mediana, moda) e de dispersão (desvio padrão, variância). A análise deve incluir distribuição de frequências, gráficos e tabelas. A interpretação dos resultados deve considerar a forma da distribuição e possíveis outliers. É importante utilizar software estatístico apropriado e verificar pressupostos.",
+        "metadata": {
+            "fonte": "Manual de Estatística Descritiva",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Silva, M.C."
+        }
+    },
+    {
+        "id": "estatistica_002",
+        "tipo": "estatistica",
+        "conteudo": "A estatística inferencial permite testar hipóteses e fazer generalizações. O pesquisador deve escolher testes apropriados considerando o tipo de dados e pressupostos. A análise deve incluir testes paramétricos (t de Student, ANOVA) ou não paramétricos (Mann-Whitney, Kruskal-Wallis). A interpretação dos resultados deve considerar o tamanho do efeito e poder estatístico. É importante reportar intervalos de confiança e valores p.",
+        "metadata": {
+            "fonte": "Manual de Estatística Inferencial",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Santos, R.P."
+        }
+    },
+    {
+        "id": "estatistica_003",
+        "tipo": "estatistica",
+        "conteudo": "A análise fatorial é fundamental para estudos de validação de instrumentos. O pesquisador deve realizar análise fatorial exploratória e confirmatória. A análise deve incluir critérios de extração de fatores, rotação e interpretação. A interpretação dos resultados deve considerar a estrutura fatorial e cargas fatoriais. É importante avaliar a adequação da amostra e a qualidade do ajuste do modelo.",
+        "metadata": {
+            "fonte": "Manual de Análise Fatorial",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Oliveira, M.S."
+        }
+    },
+    {
+        "id": "estatistica_004",
+        "tipo": "estatistica",
+        "conteudo": "A análise de regressão permite predizer variáveis dependentes. O pesquisador deve escolher modelos apropriados (linear, múltipla, logística). A análise deve incluir avaliação de pressupostos, multicolinearidade e outliers. A interpretação dos resultados deve considerar coeficientes de regressão e R². É importante avaliar a qualidade do ajuste do modelo e validade cruzada.",
+        "metadata": {
+            "fonte": "Manual de Análise de Regressão",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Costa, A.M."
+        }
+    },
+    {
+        "id": "estatistica_005",
+        "tipo": "estatistica",
+        "conteudo": "A análise de variância permite comparar grupos. O pesquisador deve escolher desenhos apropriados (unifatorial, fatorial, medidas repetidas). A análise deve incluir avaliação de pressupostos, interações e efeitos principais. A interpretação dos resultados deve considerar diferenças entre grupos e tamanho do efeito. É importante realizar análises post-hoc e reportar resultados detalhados.",
+        "metadata": {
+            "fonte": "Manual de Análise de Variância",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Mendes, C.R."
+        }
+    }
+] 

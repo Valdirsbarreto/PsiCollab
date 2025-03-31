@@ -1,0 +1,57 @@
+[
+    {
+        "id": "desenvolvimento_001",
+        "tipo": "desenvolvimento",
+        "conteudo": "O modelo de desenvolvimento de Piaget avalia os estágios do desenvolvimento cognitivo. A escala considera diferentes períodos: sensório-motor, pré-operatório, operatório concreto e operatório formal. A interpretação deve considerar o nível de desenvolvimento e as características de cada estágio.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Cognitivo",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Piaget, J."
+        }
+    },
+    {
+        "id": "desenvolvimento_002",
+        "tipo": "desenvolvimento",
+        "conteudo": "O modelo de desenvolvimento de Vygotsky avalia o desenvolvimento sócio-cultural. A escala considera a zona de desenvolvimento proximal e a mediação social. A interpretação deve considerar o contexto social e cultural.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Sócio-Cultural",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Vygotsky, L.S."
+        }
+    },
+    {
+        "id": "desenvolvimento_003",
+        "tipo": "desenvolvimento",
+        "conteudo": "O modelo de desenvolvimento de Wallon avalia o desenvolvimento psicomotor. A escala considera diferentes estágios: impulsivo-emocional, sensório-motor, personalismo e categorial. A interpretação deve considerar o desenvolvimento motor e emocional.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Psicomotor",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Wallon, H."
+        }
+    },
+    {
+        "id": "desenvolvimento_004",
+        "tipo": "desenvolvimento",
+        "conteudo": "O modelo de desenvolvimento de Erikson avalia os estágios do desenvolvimento psicossocial. A escala considera diferentes crises: confiança vs desconfiança, autonomia vs vergonha, iniciativa vs culpa, indústria vs inferioridade, identidade vs confusão de papéis, intimidade vs isolamento, generatividade vs estagnação e integridade vs desespero. A interpretação deve considerar a resolução das crises.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Psicossocial",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Erikson, E.H."
+        }
+    },
+    {
+        "id": "desenvolvimento_005",
+        "tipo": "desenvolvimento",
+        "conteudo": "O modelo de desenvolvimento de Gesell avalia o desenvolvimento infantil. A escala considera diferentes áreas: motora, adaptativa, linguagem e pessoal-social. A interpretação deve considerar o desenvolvimento global e as características de cada área.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Infantil",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Gesell, A."
+        }
+    }
+] 

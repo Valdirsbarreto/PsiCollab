@@ -1,0 +1,57 @@
+[
+    {
+        "id": "motor_001",
+        "tipo": "motor",
+        "conteudo": "A avaliação da coordenação motora considera aspectos como precisão, fluência e controle. A avaliação deve considerar diferentes tipos de movimentos. A interpretação deve considerar a capacidade de coordenação.",
+        "metadata": {
+            "fonte": "Manual de Coordenação Motora",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Bernstein, N.A."
+        }
+    },
+    {
+        "id": "motor_002",
+        "tipo": "motor",
+        "conteudo": "A avaliação do equilíbrio considera aspectos como estabilidade, postura e controle postural. A avaliação deve considerar diferentes condições. A interpretação deve considerar a capacidade de equilíbrio.",
+        "metadata": {
+            "fonte": "Manual de Equilíbrio",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Horak, F.B."
+        }
+    },
+    {
+        "id": "motor_003",
+        "tipo": "motor",
+        "conteudo": "A avaliação da força muscular considera aspectos como potência, resistência e controle. A avaliação deve considerar diferentes grupos musculares. A interpretação deve considerar a capacidade de força.",
+        "metadata": {
+            "fonte": "Manual de Força Muscular",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Kendall, F.P."
+        }
+    },
+    {
+        "id": "motor_004",
+        "tipo": "motor",
+        "conteudo": "A avaliação da velocidade motora considera aspectos como tempo de reação e velocidade de movimento. A avaliação deve considerar diferentes tipos de tarefas. A interpretação deve considerar a capacidade de velocidade.",
+        "metadata": {
+            "fonte": "Manual de Velocidade Motora",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Fitts, P.M."
+        }
+    },
+    {
+        "id": "motor_005",
+        "tipo": "motor",
+        "conteudo": "A avaliação da destreza manual considera aspectos como precisão, velocidade e controle. A avaliação deve considerar diferentes tipos de manipulação. A interpretação deve considerar a capacidade de destreza.",
+        "metadata": {
+            "fonte": "Manual de Destreza Manual",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Purdue, L."
+        }
+    }
+] 

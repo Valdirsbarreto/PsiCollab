@@ -1,0 +1,57 @@
+[
+    {
+        "id": "psicopatologia_001",
+        "tipo": "psicopatologia",
+        "conteudo": "O Transtorno Depressivo Maior é caracterizado por humor deprimido e perda de interesse ou prazer. Os sintomas incluem alterações no sono, apetite, energia, concentração e autoestima. A avaliação deve considerar critérios diagnósticos do DSM-5, incluindo duração e intensidade dos sintomas. A interpretação dos resultados deve considerar fatores de risco, comorbidades e impacto no funcionamento. É importante identificar possíveis indicadores de risco de suicídio.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "psicopatologia_002",
+        "tipo": "psicopatologia",
+        "conteudo": "O Transtorno de Ansiedade Generalizada é caracterizado por ansiedade e preocupação excessivas. Os sintomas incluem inquietação, fadiga, dificuldade de concentração, irritabilidade e tensão muscular. A avaliação deve considerar critérios diagnósticos do DSM-5, incluindo duração e intensidade dos sintomas. A interpretação dos resultados deve considerar fatores de risco, comorbidades e impacto no funcionamento. É importante identificar possíveis estratégias de enfrentamento.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "psicopatologia_003",
+        "tipo": "psicopatologia",
+        "conteudo": "O Transtorno Bipolar é caracterizado por episódios de mania ou hipomania e depressão. Os sintomas incluem alterações no humor, energia, sono, pensamento e comportamento. A avaliação deve considerar critérios diagnósticos do DSM-5, incluindo duração e intensidade dos sintomas. A interpretação dos resultados deve considerar fatores de risco, comorbidades e impacto no funcionamento. É importante identificar possíveis indicadores de episódios maníacos.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "psicopatologia_004",
+        "tipo": "psicopatologia",
+        "conteudo": "O Transtorno Obsessivo-Compulsivo é caracterizado por obsessões e compulsões. Os sintomas incluem pensamentos intrusivos e comportamentos repetitivos. A avaliação deve considerar critérios diagnósticos do DSM-5, incluindo duração e intensidade dos sintomas. A interpretação dos resultados deve considerar fatores de risco, comorbidades e impacto no funcionamento. É importante identificar possíveis padrões de obsessões e compulsões.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    },
+    {
+        "id": "psicopatologia_005",
+        "tipo": "psicopatologia",
+        "conteudo": "O Transtorno de Estresse Pós-Traumático é caracterizado por sintomas após exposição a eventos traumáticos. Os sintomas incluem revivência do trauma, evitação, alterações negativas no humor e cognição, e hiperexcitação. A avaliação deve considerar critérios diagnósticos do DSM-5, incluindo duração e intensidade dos sintomas. A interpretação dos resultados deve considerar fatores de risco, comorbidades e impacto no funcionamento. É importante identificar possíveis estratégias de enfrentamento.",
+        "metadata": {
+            "fonte": "DSM-5",
+            "ano": 2013,
+            "relevancia": "alta",
+            "autor": "APA"
+        }
+    }
+] 

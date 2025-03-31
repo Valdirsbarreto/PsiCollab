@@ -1,0 +1,57 @@
+[
+    {
+        "id": "academico_001",
+        "tipo": "academico",
+        "conteudo": "A avaliação da leitura considera aspectos como fluência, compreensão e decodificação. A avaliação deve considerar diferentes tipos de textos. A interpretação deve considerar a capacidade de leitura.",
+        "metadata": {
+            "fonte": "Manual de Avaliação da Leitura",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Snow, C.E."
+        }
+    },
+    {
+        "id": "academico_002",
+        "tipo": "academico",
+        "conteudo": "A avaliação da escrita considera aspectos como ortografia, gramática e produção de texto. A avaliação deve considerar diferentes tipos de textos. A interpretação deve considerar a capacidade de escrita.",
+        "metadata": {
+            "fonte": "Manual de Avaliação da Escrita",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Berninger, V.W."
+        }
+    },
+    {
+        "id": "academico_003",
+        "tipo": "academico",
+        "conteudo": "A avaliação da matemática considera aspectos como cálculo, resolução de problemas e conceitos. A avaliação deve considerar diferentes tipos de operações. A interpretação deve considerar a capacidade matemática.",
+        "metadata": {
+            "fonte": "Manual de Avaliação da Matemática",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Geary, D.C."
+        }
+    },
+    {
+        "id": "academico_004",
+        "tipo": "academico",
+        "conteudo": "A avaliação do conhecimento geral considera aspectos como conceitos, fatos e relações. A avaliação deve considerar diferentes áreas do conhecimento. A interpretação deve considerar a capacidade de conhecimento.",
+        "metadata": {
+            "fonte": "Manual de Avaliação do Conhecimento",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Anderson, J.R."
+        }
+    },
+    {
+        "id": "academico_005",
+        "tipo": "academico",
+        "conteudo": "A avaliação do desempenho acadêmico considera aspectos como notas, frequência e participação. A avaliação deve considerar diferentes disciplinas. A interpretação deve considerar o funcionamento acadêmico.",
+        "metadata": {
+            "fonte": "Manual de Avaliação do Desempenho",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Achenbach, T.M."
+        }
+    }
+] 

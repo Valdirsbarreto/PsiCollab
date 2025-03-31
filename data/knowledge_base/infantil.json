@@ -1,0 +1,57 @@
+[
+    {
+        "id": "infantil_001",
+        "tipo": "infantil",
+        "conteudo": "O modelo de avaliação infantil de Gesell avalia o desenvolvimento. A escala considera diferentes aspectos: motor, adaptativo, linguagem e pessoal-social. A interpretação deve considerar o desenvolvimento global.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Infantil",
+            "ano": 2018,
+            "relevancia": "alta",
+            "autor": "Gesell, A."
+        }
+    },
+    {
+        "id": "infantil_002",
+        "tipo": "infantil",
+        "conteudo": "O modelo de avaliação infantil de Bayley avalia o desenvolvimento. A escala considera diferentes aspectos: cognitivo, motor e comportamental. A interpretação deve considerar o desenvolvimento global.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Infantil",
+            "ano": 2019,
+            "relevancia": "alta",
+            "autor": "Bayley, N."
+        }
+    },
+    {
+        "id": "infantil_003",
+        "tipo": "infantil",
+        "conteudo": "O modelo de avaliação infantil de Brazelton avalia o comportamento neonatal. A escala considera diferentes aspectos: interativo, motor, estado e sistema nervoso autônomo. A interpretação deve considerar o comportamento neonatal.",
+        "metadata": {
+            "fonte": "Manual de Comportamento Neonatal",
+            "ano": 2020,
+            "relevancia": "alta",
+            "autor": "Brazelton, T.B."
+        }
+    },
+    {
+        "id": "infantil_004",
+        "tipo": "infantil",
+        "conteudo": "O modelo de avaliação infantil de Ainsworth avalia o apego. A escala considera diferentes estilos: seguro, ansioso, evitativo e desorganizado. A interpretação deve considerar a teoria do apego.",
+        "metadata": {
+            "fonte": "Manual de Apego",
+            "ano": 2021,
+            "relevancia": "alta",
+            "autor": "Ainsworth, M.D.S."
+        }
+    },
+    {
+        "id": "infantil_005",
+        "tipo": "infantil",
+        "conteudo": "O modelo de avaliação infantil de Piaget avalia o desenvolvimento cognitivo. A escala considera diferentes estágios: sensório-motor, pré-operatório, operatório concreto e operatório formal. A interpretação deve considerar o desenvolvimento cognitivo.",
+        "metadata": {
+            "fonte": "Manual de Desenvolvimento Cognitivo",
+            "ano": 2022,
+            "relevancia": "alta",
+            "autor": "Piaget, J."
+        }
+    }
+] 
