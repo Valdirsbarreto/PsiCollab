@@ -1,5 +1,6 @@
 """
-Módulo de API do PsiCollab.
+Módulo de API REST do PsiCollab.
+Fornece endpoints para acesso às funcionalidades do sistema.
 """
 
 from fastapi import APIRouter
