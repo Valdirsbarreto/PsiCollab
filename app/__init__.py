@@ -1,5 +1,5 @@
 """
-PsiCollab - Sistema de Assistência a Psicólogos
+Pacote principal do PsiCollab.
 """
 
-__version__ = "1.0.0" 
+__version__ = "0.1.0" 

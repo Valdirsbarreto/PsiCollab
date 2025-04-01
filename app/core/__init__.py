@@ -1,5 +1,5 @@
 """
-Módulo principal da IA - Core
+Módulo core do PsiCollab.
 """
 
 from .config import settings

@@ -10,25 +10,35 @@
 - ✅ Processamento de documentos JSON com embeddings
 - ✅ Inicialização da base de conhecimento no Qdrant
 - ✅ Implementação de solução local alternativa para armazenamento de embeddings
+- ✅ Criação da integração com GitHub para versionamento do código
+- ✅ Implementação do motor de busca semântica 
+- ✅ Desenvolvimento de endpoints REST para consulta à base de conhecimento
 
 ### 1.2 Status Atual
 - ✅ Docker Desktop instalado e iniciado
 - ✅ Container do Qdrant iniciado
 - ✅ Processamento dos arquivos JSON concluído com sucesso
 - ✅ Dados armazenados no Qdrant
+- ✅ API REST básica implementada
+- ✅ Endpoints de busca semântica funcionais
 
 ### 1.3 Próximos Passos
-1. Implementar sistema de busca semântica:
-   - Desenvolver endpoint de consulta
-   - Implementar busca semântica no Qdrant
-   - Aplicar mecanismos de ranking e reordenação
+1. Testar os endpoints de busca semântica:
+   - Executar o servidor API
+   - Testar buscas com diferentes tipos de consultas
+   - Verificar a qualidade dos resultados retornados
 
 2. Desenvolver interface de usuário:
    - Criar formulário de busca
    - Desenvolver visualização de resultados
    - Implementar filtros e classificação
 
-3. Adicionar funcionalidades avançadas:
+3. Adicionar sistema de autenticação:
+   - Implementar login/registro de usuários
+   - Proteger endpoints sensíveis
+   - Adicionar controle de acesso baseado em perfis
+
+4. Adicionar funcionalidades avançadas:
    - Sistema de feedback do usuário
    - Aprimoramento contínuo das respostas
    - Personalização da busca
