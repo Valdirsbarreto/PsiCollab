@@ -1,29 +1,33 @@
 # Use a imagem oficial do Python
-FROM python:3.11-slim
+FROM python:3.9-slim
 
 # Define o diretório de trabalho
 WORKDIR /app
 
-# Instala as dependências do sistema
+# Instala dependências do sistema necessárias
 RUN apt-get update && apt-get install -y \
-    build-essential \
+    gcc \
+    python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copia os arquivos de requisitos
+# Copiar os arquivos de requisitos primeiro para aproveitar o cache do Docker
 COPY requirements.txt .
-
-# Instala as dependências Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia o código da aplicação
+# Copiar o resto do código
 COPY . .
 
-# Expõe a porta que a aplicação usa
-EXPOSE 8000
+# Criar diretórios necessários
+RUN mkdir -p static data
+
+# Expor a porta que a aplicação usa
+EXPOSE 8080
 
 # Define as variáveis de ambiente
 ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
+ENV PORT=8080
+ENV HOST=0.0.0.0
 
 # Comando para executar a aplicação
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"] 
+CMD ["python", "psicollab_app.py"] 
