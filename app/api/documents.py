@@ -1,5 +1,5 @@
 """
-Módulo de rotas de documentos da API.
+Rotas relacionadas a documentos.
 """
 from fastapi import APIRouter
 
@@ -8,4 +8,4 @@ router = APIRouter(
     tags=["documentos"]
 )
 
-# TODO: Implementar endpoints de documentos 
+# TODO: Implementar rotas de documentos 

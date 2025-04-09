@@ -124,18 +124,34 @@ async def root():
     return FileResponse('static/index.html')
 
 # Rotas de autenticação
-@app.get("/api/auth/google", tags=["Autenticação"])
+@app.get("/api/auth/google")
 async def google_auth():
-    """Inicia o fluxo de autenticação do Google"""
-    params = {
-        "client_id": GOOGLE_CLIENT_ID,
-        "response_type": "code",
-        "scope": "openid email profile",
-        "redirect_uri": GOOGLE_REDIRECT_URI,
-        "access_type": "offline",
-        "state": "state_parameter_passthrough_value"
-    }
-    auth_url = f"{GOOGLE_AUTH_URL}?{urlencode(params)}"
+    """
+    Endpoint para iniciar o fluxo de autenticação Google.
+    Redireciona o usuário para a página de login do Google.
+    """
+    client_id = os.getenv("GOOGLE_CLIENT_ID")
+    redirect_uri = os.getenv("GOOGLE_REDIRECT_URI")
+    
+    if not client_id or not redirect_uri:
+        raise HTTPException(
+            status_code=500,
+            detail="Configuração do Google OAuth não encontrada"
+        )
+    
+    # Escopo para acessar informações básicas do perfil
+    scope = "openid email profile"
+    
+    # URL de autorização do Google
+    auth_url = (
+        "https://accounts.google.com/o/oauth2/v2/auth"
+        f"?client_id={client_id}"
+        f"&redirect_uri={redirect_uri}"
+        f"&scope={scope}"
+        "&response_type=code"
+        "&access_type=offline"
+    )
+    
     return RedirectResponse(url=auth_url)
 
 @app.get("/api/auth/google/callback", tags=["Autenticação"])
@@ -309,4 +325,4 @@ app.openapi = custom_openapi
 
 if __name__ == "__main__":
     logger.info("Iniciando servidor PsiCollab...")
-    uvicorn.run(app, host="127.0.0.1", port=8080) 
+    uvicorn.run(app, host="0.0.0.0", port=8080) 

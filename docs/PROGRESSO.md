@@ -316,4 +316,39 @@ data/
 - Processamento assíncrono
 - Validação de dados
 - Tratamento de erros
-- Processamento em lotes 
+- Processamento em lotes
+
+## 13. Implementação da Autenticação
+
+### 13.1 Google OAuth2
+- ✅ Configuração do projeto no Google Cloud Console
+- ✅ Obtenção das credenciais OAuth2 (Client ID e Client Secret)
+- ✅ Implementação das configurações no arquivo `app/core/config.py`
+- ✅ Criação do arquivo `.env` com as credenciais
+- ✅ Desenvolvimento do módulo de autenticação em `app/core/auth.py`
+- ✅ Implementação das rotas de autenticação no `app/main.py`
+- ✅ Resolução de problemas iniciais com pydantic-settings
+- ✅ Configuração correta do CORS para permitir redirecionamentos
+
+### 13.2 Resolução de Problemas no Servidor
+- ✅ Diagnóstico e resolução do problema ERR_CONNECTION_REFUSED
+- ✅ Identificação da causa: servidor Uvicorn fechando imediatamente após inicialização em ambiente interativo
+- ✅ Solução: execução do servidor em terminal externo dedicado
+- ✅ Verificação da execução contínua do servidor
+- ✅ Atualização da documentação e notas técnicas para evitar problemas similares
+
+## 14. Fluxo de Autenticação
+
+### 14.1 Implementação Atual
+- ✅ Rota `/api/auth/google` para iniciar o fluxo de autenticação
+- ✅ Rota `/api/auth/google/callback` para processar o retorno do Google
+- ✅ Obtenção e processamento do token de acesso
+- ✅ Recuperação das informações do usuário
+- ✅ Geração de JWT para autenticação na aplicação
+
+### 14.2 Próximos Passos (Autenticação)
+- ⏳ Implementar armazenamento de usuários no banco de dados
+- ⏳ Desenvolver middleware de autenticação para proteger rotas
+- ⏳ Adicionar sistema de refresh token
+- ⏳ Implementar logout e revogação de tokens
+- ⏳ Criar sistema de perfis e permissões 

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsiCollab - Autenticação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .notice {
+            background-color: #f8f9fe;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 30px;
+            text-align: left;
+            color: #2c3e50;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-bottom: 15px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-google {
+            background-color: white;
+            border: 1px solid #ddd;
+            color: #333;
+        }
+
+        .btn-google:hover {
+            background-color: #f5f5f5;
+        }
+
+        .btn-phone {
+            background-color: #3498db;
+            border: none;
+            color: white;
+        }
+
+        .btn-phone:hover {
+            background-color: #2980b9;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            color: #666;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .divider span {
+            padding: 0 10px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .user-profile {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            border: 3px solid #3498db;
+            overflow: hidden;
+        }
+        
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .user-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .user-email {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .btn-enter {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+        }
+        
+        .btn-enter:hover {
+            background-color: #219653;
+        }
+        
+        .btn-logout {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+        }
+        
+        .btn-logout:hover {
+            background-color: #c0392b;
+        }
+    </style>
+    <script>
+        // Verifica se há um token na URL após redirecionamento
+        function getTokenFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('token');
+        }
+        
+        // Salva token no localStorage
+        function saveToken(token) {
+            localStorage.setItem('psicollab_token', token);
+        }
+        
+        // Obtém token do localStorage
+        function getToken() {
+            return localStorage.getItem('psicollab_token');
+        }
+        
+        // Remove token do localStorage
+        function removeToken() {
+            localStorage.removeItem('psicollab_token');
+        }
+        
+        // Verifica se o usuário está autenticado
+        function isAuthenticated() {
+            return !!getToken();
+        }
+        
+        // Busca informações do usuário usando o token
+        async function fetchUserInfo() {
+            const token = getToken();
+            if (!token) return null;
+            
+            try {
+                const response = await fetch('/api/auth/me', {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+                
+                if (response.ok) {
+                    return await response.json();
+                } else {
+                    // Token inválido ou expirado
+                    removeToken();
+                    return null;
+                }
+            } catch (error) {
+                console.error('Erro ao buscar informações do usuário:', error);
+                return null;
+            }
+        }
+        
+        // Atualiza a interface para mostrar usuário logado
+        function showLoggedInUser(user) {
+            const loginContainer = document.getElementById('login-container');
+            const userProfile = document.getElementById('user-profile');
+            
+            if (user) {
+                // Preenche perfil do usuário
+                document.getElementById('user-avatar').src = user.profile_picture || 'https://via.placeholder.com/80';
+                document.getElementById('user-name').textContent = user.name || 'Usuário';
+                document.getElementById('user-email').textContent = user.email || '';
+                
+                // Mostra perfil e esconde login
+                loginContainer.style.display = 'none';
+                userProfile.style.display = 'block';
+            } else {
+                // Mostra login e esconde perfil
+                loginContainer.style.display = 'block';
+                userProfile.style.display = 'none';
+            }
+        }
+        
+        // Função de logout
+        function logout() {
+            removeToken();
+            showLoggedInUser(null);
+        }
+        
+        // Função para entrar no sistema
+        function enterSystem() {
+            window.location.href = '/dashboard';
+        }
+
+        function handleGoogleLogin() {
+            // URL de autenticação do Google
+            const googleAuthUrl = '/api/auth/google';
+            
+            // Adiciona loading state ao botão
+            const btnGoogle = document.querySelector('.btn-google');
+            btnGoogle.style.opacity = '0.7';
+            btnGoogle.style.pointerEvents = 'none';
+            
+            // Mostra indicador de carregamento
+            document.getElementById('loading').style.display = 'block';
+            
+            // Redireciona para autenticação do Google
+            window.location.href = googleAuthUrl;
+        }
+
+        function handlePhoneLogin() {
+            // URL para página de login com celular
+            const phoneAuthUrl = '/api/auth/phone';
+            
+            // Adiciona loading state ao botão
+            const btnPhone = document.querySelector('.btn-phone');
+            btnPhone.style.opacity = '0.7';
+            btnPhone.style.pointerEvents = 'none';
+            
+            // Mostra indicador de carregamento
+            document.getElementById('loading').style.display = 'block';
+            
+            // Redireciona para autenticação por telefone
+            window.location.href = phoneAuthUrl;
+        }
+
+        // Inicialização da página
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Configura botões
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (btn.classList.contains('btn-google')) {
+                        handleGoogleLogin();
+                    } else if (btn.classList.contains('btn-phone')) {
+                        handlePhoneLogin();
+                    } else if (btn.classList.contains('btn-logout')) {
+                        logout();
+                    } else if (btn.classList.contains('btn-enter')) {
+                        enterSystem();
+                    }
+                });
+            });
+            
+            // Verifica token na URL (após redirecionamento de OAuth)
+            const tokenFromUrl = getTokenFromUrl();
+            if (tokenFromUrl) {
+                saveToken(tokenFromUrl);
+                // Remove o token da URL para segurança
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+            
+            // Verifica se usuário está autenticado
+            if (isAuthenticated()) {
+                // Busca informações do usuário
+                const user = await fetchUserInfo();
+                if (user) {
+                    // Mostra perfil do usuário
+                    showLoggedInUser(user);
+                } else {
+                    // Token inválido ou erro ao buscar usuário
+                    showLoggedInUser(null);
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Container de login -->
+    <div class="container" id="login-container">
+        <div class="logo">
+            <!-- Placeholder para o logo -->
+            <span style="color: #666; font-size: 24px;">PSI</span>
+        </div>
+
+        <h1>Acesso Exclusivo</h1>
+        <p class="subtitle">Sistema avançado de assistência na elaboração de laudos psicológicos</p>
+
+        <div class="notice">
+            Acesso restrito a profissionais de psicologia devidamente registrados no Conselho Federal de Psicologia (CFP).
+        </div>
+
+        <a href="#" class="btn btn-google" onclick="handleGoogleLogin()">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            Entrar com Google
+        </a>
+
+        <div class="divider">
+            <span>ou</span>
+        </div>
+
+        <a href="#" class="btn btn-phone" onclick="handlePhoneLogin()">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            Entrar com celular
+        </a>
+
+        <p class="footer">
+            Ao continuar, você concorda com nossos <a href="#">Termos de Uso</a> e 
+            <a href="#">Política de Privacidade</a> em conformidade com a LGPD.
+        </p>
+    </div>
+    
+    <!-- Container de perfil do usuário (quando autenticado) -->
+    <div class="container user-profile" id="user-profile">
+        <div class="avatar">
+            <img id="user-avatar" src="https://via.placeholder.com/80" alt="Avatar do usuário">
+        </div>
+        
+        <h1>Bem-vindo ao PsiCollab</h1>
+        <p class="user-name" id="user-name">Nome do Usuário</p>
+        <p class="user-email" id="user-email">email@exemplo.com</p>
+        
+        <a href="#" class="btn btn-enter">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+            Entrar no Sistema
+        </a>
+        
+        <a href="#" class="btn btn-logout">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"></path>
+                <path d="M16 17l5-5-5-5"></path>
+                <path d="M21 12H9"></path>
+            </svg>
+            Sair
+        </a>
+    </div>
+
+    <!-- Indicador de carregamento -->
+    <div id="loading" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); color: white; padding: 20px; border-radius: 8px;">
+        Carregando...
+    </div>
+</body>
+</html> 

@@ -1,5 +1,5 @@
 """
-Módulo de rotas de usuários da API.
+Rotas relacionadas a usuários.
 """
 from fastapi import APIRouter
 
@@ -8,4 +8,4 @@ router = APIRouter(
     tags=["usuários"]
 )
 
-# TODO: Implementar endpoints de usuários 
+# TODO: Implementar rotas de usuários 

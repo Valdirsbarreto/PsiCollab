@@ -1,5 +1,5 @@
 """
-Módulo de rotas de relatórios da API.
+Rotas relacionadas a relatórios.
 """
 from fastapi import APIRouter
 
@@ -8,4 +8,4 @@ router = APIRouter(
     tags=["relatórios"]
 )
 
-# TODO: Implementar endpoints de relatórios 
+# TODO: Implementar rotas de relatórios 

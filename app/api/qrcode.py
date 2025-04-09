@@ -1,11 +1,11 @@
 """
-Módulo de rotas de QR codes da API.
+Rotas relacionadas a QR Code.
 """
 from fastapi import APIRouter
 
 router = APIRouter(
     prefix="/qrcode",
-    tags=["qr codes"]
+    tags=["qrcode"]
 )
 
-# TODO: Implementar endpoints de QR codes 
+# TODO: Implementar rotas de QR Code 
