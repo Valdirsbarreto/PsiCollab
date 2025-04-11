@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsiCollab - Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .welcome {
+            font-size: 24px;
+            color: #333;
+        }
+        .logout {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .logout:hover {
+            background-color: #d32f2f;
+        }
+        .content {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="welcome">Bem-vindo ao PsiCollab</h1>
+            <button class="logout" onclick="logout()">Sair</button>
+        </div>
+        <div class="content">
+            <p>Você está autenticado e pode começar a usar o sistema.</p>
+        </div>
+    </div>
+
+    <script>
+        // Função para fazer logout
+        function logout() {
+            localStorage.removeItem('accessToken');
+            window.location.href = '/';
+        }
+
+        // Verifica se o usuário está autenticado
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('accessToken');
+            if (!token) {
+                window.location.href = '/';
+            }
+        });
+    </script>
+</body>
+</html> 

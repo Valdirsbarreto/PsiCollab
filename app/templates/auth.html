@@ -40,6 +40,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 24px;
+            color: #3498db;
         }
 
         .logo img {
@@ -200,164 +202,151 @@
         .btn-logout:hover {
             background-color: #c0392b;
         }
+
+        /* Estilos para o modal de SMS */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #666;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            text-align: left;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .verification-message {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        /* Estilos do Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            text-align: left;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+            text-align: left;
+        }
+
+        .loading {
+            display: none;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
-    <script>
-        // Verifica se há um token na URL após redirecionamento
-        function getTokenFromUrl() {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get('token');
-        }
-        
-        // Salva token no localStorage
-        function saveToken(token) {
-            localStorage.setItem('psicollab_token', token);
-        }
-        
-        // Obtém token do localStorage
-        function getToken() {
-            return localStorage.getItem('psicollab_token');
-        }
-        
-        // Remove token do localStorage
-        function removeToken() {
-            localStorage.removeItem('psicollab_token');
-        }
-        
-        // Verifica se o usuário está autenticado
-        function isAuthenticated() {
-            return !!getToken();
-        }
-        
-        // Busca informações do usuário usando o token
-        async function fetchUserInfo() {
-            const token = getToken();
-            if (!token) return null;
-            
-            try {
-                const response = await fetch('/api/auth/me', {
-                    headers: {
-                        'Authorization': `Bearer ${token}`
-                    }
-                });
-                
-                if (response.ok) {
-                    return await response.json();
-                } else {
-                    // Token inválido ou expirado
-                    removeToken();
-                    return null;
-                }
-            } catch (error) {
-                console.error('Erro ao buscar informações do usuário:', error);
-                return null;
-            }
-        }
-        
-        // Atualiza a interface para mostrar usuário logado
-        function showLoggedInUser(user) {
-            const loginContainer = document.getElementById('login-container');
-            const userProfile = document.getElementById('user-profile');
-            
-            if (user) {
-                // Preenche perfil do usuário
-                document.getElementById('user-avatar').src = user.profile_picture || 'https://via.placeholder.com/80';
-                document.getElementById('user-name').textContent = user.name || 'Usuário';
-                document.getElementById('user-email').textContent = user.email || '';
-                
-                // Mostra perfil e esconde login
-                loginContainer.style.display = 'none';
-                userProfile.style.display = 'block';
-            } else {
-                // Mostra login e esconde perfil
-                loginContainer.style.display = 'block';
-                userProfile.style.display = 'none';
-            }
-        }
-        
-        // Função de logout
-        function logout() {
-            removeToken();
-            showLoggedInUser(null);
-        }
-        
-        // Função para entrar no sistema
-        function enterSystem() {
-            window.location.href = '/dashboard';
-        }
-
-        function handleGoogleLogin() {
-            // URL de autenticação do Google
-            const googleAuthUrl = '/api/auth/google';
-            
-            // Adiciona loading state ao botão
-            const btnGoogle = document.querySelector('.btn-google');
-            btnGoogle.style.opacity = '0.7';
-            btnGoogle.style.pointerEvents = 'none';
-            
-            // Mostra indicador de carregamento
-            document.getElementById('loading').style.display = 'block';
-            
-            // Redireciona para autenticação do Google
-            window.location.href = googleAuthUrl;
-        }
-
-        function handlePhoneLogin() {
-            // URL para página de login com celular
-            const phoneAuthUrl = '/api/auth/phone';
-            
-            // Adiciona loading state ao botão
-            const btnPhone = document.querySelector('.btn-phone');
-            btnPhone.style.opacity = '0.7';
-            btnPhone.style.pointerEvents = 'none';
-            
-            // Mostra indicador de carregamento
-            document.getElementById('loading').style.display = 'block';
-            
-            // Redireciona para autenticação por telefone
-            window.location.href = phoneAuthUrl;
-        }
-
-        // Inicialização da página
-        document.addEventListener('DOMContentLoaded', async () => {
-            // Configura botões
-            const buttons = document.querySelectorAll('.btn');
-            buttons.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    if (btn.classList.contains('btn-google')) {
-                        handleGoogleLogin();
-                    } else if (btn.classList.contains('btn-phone')) {
-                        handlePhoneLogin();
-                    } else if (btn.classList.contains('btn-logout')) {
-                        logout();
-                    } else if (btn.classList.contains('btn-enter')) {
-                        enterSystem();
-                    }
-                });
-            });
-            
-            // Verifica token na URL (após redirecionamento de OAuth)
-            const tokenFromUrl = getTokenFromUrl();
-            if (tokenFromUrl) {
-                saveToken(tokenFromUrl);
-                // Remove o token da URL para segurança
-                window.history.replaceState({}, document.title, window.location.pathname);
-            }
-            
-            // Verifica se usuário está autenticado
-            if (isAuthenticated()) {
-                // Busca informações do usuário
-                const user = await fetchUserInfo();
-                if (user) {
-                    // Mostra perfil do usuário
-                    showLoggedInUser(user);
-                } else {
-                    // Token inválido ou erro ao buscar usuário
-                    showLoggedInUser(null);
-                }
-            }
-        });
-    </script>
 </head>
 <body>
     <!-- Container de login -->
@@ -428,9 +417,64 @@
         </a>
     </div>
 
-    <!-- Indicador de carregamento -->
-    <div id="loading" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); color: white; padding: 20px; border-radius: 8px;">
+    <!-- Indicador de carregamento global -->
+    <div id="globalLoading" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); color: white; padding: 20px; border-radius: 8px;">
         Carregando...
     </div>
+
+    <!-- Modal de autenticação por SMS -->
+    <div id="smsModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Autenticação por SMS</h2>
+            
+            <!-- Etapa 1: Entrada do número de telefone -->
+            <div id="phoneStep">
+                <div class="input-group">
+                    <label for="phone">Número de telefone:</label>
+                    <input type="tel" id="phone" placeholder="+5521999999999" 
+                           pattern="\\+[0-9]{10,14}" required>
+                    <p class="verification-message" style="margin-top: 5px; color: #666;">
+                        Digite seu número no formato internacional: +5521999999999
+                    </p>
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+                <button class="btn btn-phone" onclick="requestSmsCode()">
+                    Receber código por SMS
+                </button>
+            </div>
+            
+            <!-- Etapa 2: Verificação do código -->
+            <div id="codeStep" style="display: none;">
+                <div class="input-group">
+                    <label for="code">Código de verificação:</label>
+                    <input type="text" id="code" placeholder="Digite o código de 6 dígitos" 
+                           pattern="[0-9]{6}" maxlength="6" required>
+                    <div class="error-message" id="codeError"></div>
+                </div>
+                <div class="verification-message">
+                    Enviamos um código para <span id="confirmedPhone"></span>
+                </div>
+                <button class="btn btn-phone" onclick="verifyPhoneCode()">
+                    Verificar código
+                </button>
+            </div>
+
+            <div id="modalLoading" class="loading" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p style="margin-top: 10px; color: #666;">Processando...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script>
+        // Configuração da URL da API
+        const API_URL = window.location.origin;
+    </script>
+    <script src="/static/js/auth.js"></script>
 </body>
 </html> 

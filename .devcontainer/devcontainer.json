@@ -1,0 +1,19 @@
+{
+  "name": "PsiCollab DevContainer",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/app",
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode.makefile-tools"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteEnv": {
+    "PYTHONPATH": "/app"
+  }
+}

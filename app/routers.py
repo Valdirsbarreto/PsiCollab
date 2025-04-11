@@ -1,8 +1,25 @@
 """
 Rotas da API PsiCollab
 """
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Depends, Request
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel
+from typing import Optional
+import logging
+from app.core.sms_auth import send_verification_code, verify_code, create_phone_token, validate_phone_token
+from app.core.auth import get_current_user
+
+# Configuração do logger
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+# Modelos Pydantic para validação
+class PhoneRequest(BaseModel):
+    phone_number: str
+
+class VerifyRequest(BaseModel):
+    phone_number: str
+    code: str
 
 # Router para o sistema
 system_router = APIRouter(
@@ -66,10 +83,47 @@ async def phone_auth():
     """
     return JSONResponse({"message": "Autenticação com telefone será implementada"})
 
+# Rotas de autenticação por telefone
+@auth_router.post("/phone/request")
+async def request_verification(phone_request: PhoneRequest):
+    """
+    Envia código de verificação via SMS
+    """
+    try:
+        await send_verification_code(phone_request.phone_number)
+        return {"message": "Código enviado com sucesso"}
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao enviar código de verificação: {str(e)}")
+
+@auth_router.post("/phone/verify")
+async def verify_phone(verify_request: VerifyRequest):
+    """
+    Verifica o código recebido e retorna um token JWT
+    """
+    try:
+        is_valid = await verify_code(verify_request.phone_number, verify_request.code)
+        if is_valid:
+            token = create_phone_token(verify_request.phone_number)
+            return {"access_token": token, "token_type": "bearer"}
+        else:
+            raise HTTPException(status_code=400, detail="Código inválido")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao verificar código: {str(e)}")
+
 # Rotas protegidas
 @protected_router.get("/protected")
-async def protected_route():
+async def protected_route(request: Request, user_data: dict = Depends(get_current_user)):
     """
     Exemplo de rota protegida
     """
-    return {"message": "Rota protegida"} 
+    logger.debug(f"Headers da requisição: {dict(request.headers)}")
+    logger.debug(f"Dados do usuário: {user_data}")
+    
+    return {
+        "message": "Rota protegida acessada com sucesso",
+        "user": user_data
+    } 

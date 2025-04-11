@@ -13,6 +13,10 @@
 - ✅ Criação da integração com GitHub para versionamento do código
 - ✅ Implementação do motor de busca semântica 
 - ✅ Desenvolvimento de endpoints REST para consulta à base de conhecimento
+- ✅ Implementação da autenticação via Google OAuth2
+- ✅ Desenvolvimento de testes unitários (9/10 passando)
+- ✅ Configuração do ambiente de testes com pytest
+- ✅ Implementação da autenticação por SMS
 
 ### 1.2 Status Atual
 - ✅ Docker Desktop instalado e iniciado
@@ -21,24 +25,33 @@
 - ✅ Dados armazenados no Qdrant
 - ✅ API REST básica implementada
 - ✅ Endpoints de busca semântica funcionais
+- ✅ Sistema de autenticação Google implementado e testado
+- ✅ Sistema de autenticação por SMS implementado
+- ✅ Testes unitários e de integração configurados
 
 ### 1.3 Próximos Passos
-1. Testar os endpoints de busca semântica:
-   - Executar o servidor API
-   - Testar buscas com diferentes tipos de consultas
-   - Verificar a qualidade dos resultados retornados
+1. Implementar integração com provedor de SMS:
+   - Configurar Twilio ou outro provedor
+   - Implementar envio real de SMS
+   - Adicionar testes para envio de SMS
 
-2. Desenvolver interface de usuário:
+2. Melhorar cobertura de testes:
+   - Implementar teste pendente de redirecionamento Google
+   - Adicionar testes para autenticação por SMS
+   - Desenvolver testes de integração para novos endpoints
+
+3. Desenvolver interface de usuário:
    - Criar formulário de busca
    - Desenvolver visualização de resultados
    - Implementar filtros e classificação
+   - Adicionar interface para autenticação por SMS
 
-3. Adicionar sistema de autenticação:
+4. Adicionar sistema de autenticação:
    - Implementar login/registro de usuários
    - Proteger endpoints sensíveis
    - Adicionar controle de acesso baseado em perfis
 
-4. Adicionar funcionalidades avançadas:
+5. Adicionar funcionalidades avançadas:
    - Sistema de feedback do usuário
    - Aprimoramento contínuo das respostas
    - Personalização da busca

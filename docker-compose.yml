@@ -13,12 +13,20 @@ services:
       - PORT=8080
       - HOST=0.0.0.0
       - DEBUG=True
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_VERIFY_SID=${TWILIO_VERIFY_SID}
+      - SMS_CODE_EXPIRY_MINUTES=5
+      - REDIS_HOST=redis
     env_file:
       - .env
     volumes:
-      - ./static:/app/static
+      - .:/app
+      - ./app/static:/app/app/static
+      - ./app/templates:/app/app/templates
       - ./data:/app/data
     depends_on:
+      - redis
       - qdrant
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
@@ -34,6 +42,21 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+
+  # Serviço Redis para cache
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - psicollab-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
   # Serviço Qdrant para busca vetorial
   qdrant:
@@ -63,6 +86,8 @@ services:
 volumes:
   qdrant_data:
     name: psicollab_qdrant_data
+  redis_data:
+    name: psicollab_redis_data
 
 # Definição de redes
 networks:

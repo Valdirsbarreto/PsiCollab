@@ -16,13 +16,14 @@ from app.core.database import get_db
 from app.models.user import User
 from app.repositories.user_repository import UserRepository
 from app.schemas.user import GoogleUser, UserCreate, TokenData
+from app.core.sms_auth import validate_phone_token
 
 GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth"
 GOOGLE_TOKEN_URL = "https://oauth2.googleapis.com/token"
 GOOGLE_USERINFO_URL = "https://www.googleapis.com/oauth2/v2/userinfo"
 
 # Configuração do OAuth2
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/auth/token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/auth/token", auto_error=False)
 
 # Logger
 logger = logging.getLogger(__name__)
@@ -148,40 +149,49 @@ async def process_google_user(user_info: dict, db: Session) -> User:
     
     return user
 
-async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)) -> User:
+async def get_current_user(token: Optional[str] = Depends(oauth2_scheme)) -> Union[User, dict]:
     """
     Obtém o usuário atual a partir do token JWT
+    Suporta tanto tokens do Google quanto tokens de telefone
     """
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Credenciais inválidas",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    
+    if not token:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Token não fornecido",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    # Primeiro tenta validar como token de telefone
+    phone_number = validate_phone_token(token)
+    if phone_number:
+        return {"type": "phone", "phone_number": phone_number}
+
+    # Se não for token de telefone, tenta validar como token Google
     try:
-        # Decodifica o token
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
         email: str = payload.get("email")
         exp: int = payload.get("exp")
         
         if email is None:
-            raise credentials_exception
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Token inválido",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
         
-        token_data = TokenData(email=email, exp=exp)
-        
-        # Verifica se o token expirou
         if exp < time.time():
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Token expirado",
                 headers={"WWW-Authenticate": "Bearer"},
             )
-    except jwt.PyJWTError:
-        raise credentials_exception
-    
-    # Busca o usuário no banco de dados
-    user = UserRepository.get_by_email(db, token_data.email)
-    if user is None:
-        raise credentials_exception
-    
-    return user 
+
+        return {"type": "google", "email": email}
+
+    except jwt.PyJWTError as e:
+        logger.error(f"Erro ao decodificar token: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Token inválido",
+            headers={"WWW-Authenticate": "Bearer"},
+        ) 
